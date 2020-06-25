@@ -21,7 +21,7 @@ function getAuthType() {
  */
 function resetAuth() {
     var userProperties = PropertiesService.getUserProperties();
-    userProperties.deleteProperty("dscc.key");
+    userProperties.deleteProperty('dscc.key');
 }
 
 /**
@@ -31,7 +31,7 @@ function resetAuth() {
  */
 function isAuthValid() {
     var userProperties = PropertiesService.getUserProperties();
-    var key = userProperties.getProperty("dscc.key");
+    var key = userProperties.getProperty('dscc.key');
     // check if the key is vaild or not
     return checkForValidKey(key);
 }
@@ -70,9 +70,9 @@ function checkForValidKey(key) {
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-api-key": "fdccd940-b452-11ea-a4ba-cfb52a787dd7",
+            "x-api-key": "" + key,
         },
+        'muteHttpExceptions': true
     })
-    Logger.log(response.getResponseCode())
-    return response.getResponseCode() === 200 ? true : false
+    return response.getResponseCode() !== 200 ? false : true
 }

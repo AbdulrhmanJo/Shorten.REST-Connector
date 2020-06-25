@@ -1,7 +1,11 @@
 {
-  "timeZone": "America/New_York",
-  "dependencies": {
-  },
-  "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8"
+  "dataStudio": {
+    "name": "Shorten.REST",
+    "logoUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D256373445296316&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FShorten.rest%2F&tbnid=nbFwvccOKeoC6M&vet=12ahUKEwitwJjL6pnqAhXFhxQKHW0bDNoQMygCegUIARCAAQ..i&docid=aeaPoihp8g09IM&w=960&h=960&q=shorten.rest&safe=strict&ved=2ahUKEwitwJjL6pnqAhXFhxQKHW0bDNoQMygCegUIARCAAQ",
+    "company": "Shorten.REST",
+    "companyUrl": "https://shorten.rest/",
+    "addonUrl": "https://shorten.rest/privacy/",
+    "supportUrl": "https://shorten.rest/support/",
+    "description": "Get your clicks data from Shorten.REST"
+  }
 }
